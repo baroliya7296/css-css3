@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* (1).universal selector(*),it will apply on all element/tags */
+       * {
+           border: 1px solid grey;          
+        }
+
+         /* (2).tag selector/type selector,it will apply on all specified type element/tags */
+        b  {
+            color: red;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        i{
+            color:aquamarine; 
+            font-size: 30px;
+            font-weight: 300;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* (3).group slector,it will apply on all group element/tags */
+        b,
+        i  {
+            color: brown;
+            font-size: 40px;
+            font-weight: 300;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* (4).class selector (.) it is used to give same style to multiple element/tag a class can be used multiple times and an element/tags can have multiple class */
+         .grey-border {
+             border-color:black;
+         }
+        .rounded-border  {
+                          border-radius: 3px;
+         }
+
+         /* (5).id selector (#) it is used to give style to specific single element/tags,id can't be used more than 1 time,an element can't have more than 1 id */
+         #special-i {
+            background-color: rgb(74, 84, 223);
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <b class="grey-border rounded-border">This is tree.</b>
+        <br>
+        <i class="grey-border rounded-border" id="special-i">this is tree</i>
+        <br>
+        <u>this is tree</u>
+        <br>
+        <div>this is tree</div>
+    </div>
+    
+</body>
+</html>

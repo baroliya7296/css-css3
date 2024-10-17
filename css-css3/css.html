@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /* univrsal selector */
+     * {
+        border: 1px solid black;
+     }
+
+     /* group selector */
+     p,
+     div,
+     i  {
+        background-color: aqua;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+
+     /* tag/type selector */
+     p {
+        font-size: x-large;
+        font-weight: 600;
+     }
+     i {
+        font-size: x-large;
+        font-weight: 600;
+     }
+
+     /* class selector */
+     .pink-border {
+         border-color: rgb(187, 25, 179);
+         border-radius: 30px;
+     }
+
+     /*id selector */
+     #special-p {
+        background-color: rgb(20, 220, 170);
+     }
+          
+    </style>
+ </head>
+ <body>
+        <p class="pink-border border-radius" id="special-p">this is tree.the tree is very important for us.</p>
+        <div>this is tree.the tree is very important for us.</div>
+        <i class="pink-border">this is tree.the tree is very important for us.</i>
+ </body>
+ </html>

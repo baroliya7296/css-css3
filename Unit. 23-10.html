@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Unit */
+         /* unit two parts=1.absolute-purepuru 2.relative-sabandhit */
+         /* absolute-ex.(px) */
+         /* relative-ex.(%,vh,vw,em,rem) */
+
+         /* px, it is absolute unit, use it when you don't want to change size even when making responsive  */
+
+         /* %, it is relative unit,  it is used to get size from your parent,  */
+         /* vw, it is relative unit, it is used to get size from viewport width  */
+         /* vh, it is relative unit, it is used to get size from viewport height  */
+         /* em, it is relative unit, it is used to get font size from immediate parent */
+         /* rem, it is relative unit, it is used to get font size from root element */
+
+         .box {
+        height: 300px;
+        width: 300px;
+         /* totle display size na persentens */
+        /* width: 80%; */
+       background-color: cornflowerblue;
+       /* border: 10px solid black; */
+       margin: 50px auto;
+       border-radius: 10px;
+
+      }
+
+      .innerbox{
+                 /* height: 10vh; */
+                 height: 100px;
+                 width: 100px;
+                 /* up box na persentens */
+                 /* width: 50%; */
+                 /* width: 50vw; */
+                 background-color: coral;
+                 margin: 50px auto;
+      }
+
+      .parent,
+      .child,
+      .sub-child {
+                   border: 10px solid black;
+                   margin: 10px;
+                   padding: 5px;
+      }
+
+      .child{
+             border: 10px solid blue;
+             font-size: 16px;
+      }
+      .sub-child{
+            border: 10px solid red;
+      }
+
+      .parent {
+             font-size: 40px;
+      }
+      /* parent font-size is 40px to child font size is 80px for (2em) effect.2em-means up class value double */
+      .child{
+            font-size: 2em;
+      }
+       /* html font-size is 16px to sub-child font size is 32px for (2rem) effect.2rem means root(mool) html front 16px hoy tena double*/
+      .sub-child{
+            font-size: 2rem;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="innerbox"></div>
+    </div>
+      <div class="parent">
+        parent
+             <div class="child">
+             child
+                 <div class="sub-child">sub-child</div>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            margin: 50px auto;
+            border: 10px solid black;
+            background-color: aqua;
+            border-radius: 20px;
+
+            background-image: linear-gradient(blue,pink);
+            background-image: linear-gradient(to right,blue,pink) ;
+            background-image: linear-gradient(to left,blue,pink) ;
+            background-image: linear-gradient(to top,blue,pink) ;
+            background-image: linear-gradient(to bottom,blue,pink) ;
+            background-image: linear-gradient(45deg,blue,pink) ;
+            background-image: linear-gradient(-45deg,blue,pink) ;
+
+            background-image: linear-gradient(to right,blue 30%,pink 60%,purple);
+
+            /* background-image: radial-gradient(skyblue, pink, orange, red); */
+         background-image: radial-gradient(
+            /* farthest-corner at 40%  70%, */
+          skyblue,
+          pink,
+          orange,
+          red 
+        );
+
+         /* cap style round */
+        background-image: conic-gradient(blue, pink, red);
+
+        background-image: repeating-linear-gradient(blue 2%, pink 20%);
+       }
+       .janivalapinara{
+                       height: 300px;
+                       width: 300px;
+                       border: 10px solid black;
+                       border-radius: 20px;
+                       margin: 50px auto;
+                       border-color: darkolivegreen;
+
+                       background-image: linear-gradient(
+                       45deg,
+                       purple,
+                       teal,
+                       skyblue,
+                       green,
+                       yellow,
+                       orange,
+                       maroon);
+       }
+       .round {
+           height: 300px;
+            width: 300px;
+            margin: 50px auto;
+            border: 10px solid black;
+            background-color: rgb(225, 0, 255);
+            border-radius: 20px;
+
+            background-image: repeating-radial-gradient( green, rgb(231, 87, 236),yellow,blue );
+
+       }
+
+        
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+     <div class="janivalapinara"></div>
+     <div class="round"></div>
+</body>
+</html>

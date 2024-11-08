@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+            padding: 100px;
+        }
+        .box  {
+            height: 100px;
+            width: 700px;
+            border-radius: 12px;
+            background-color: cadetblue;
+            margin: 50px auto;
+            position: relative;
+        }
+        .box::before {
+            content:'';
+            height: 0;
+            width:  5px;
+            border-radius: 24px;
+            background-color: rgb(74, 75, 73);
+            position: absolute;
+            left: -10px;
+            top: 0;
+            transition: all 300ms;
+        }
+        .second::before{
+            left: 703px;
+            right: 10px;
+        }
+        .box:hover::before {
+            height: 100%;
+        }
+
+        nav a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #24252e;
+        margin-left: 30px;
+
+        position: relative;
+      }
+      a::before {
+        content: '';
+        height: 5px;
+        border-radius: 24px;
+        width: 0;
+        background-color: teal;
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+
+        transition: all 300ms;
+      }
+      a:hover::before{
+        width: 100%;
+      }
+      li {
+        margin: 10px;
+      }
+      li::before{
+        content: 'new';
+        padding: 1px;
+        border-radius: 5px;
+        background-color: lightgray;
+        margin-right: 15px;
+      }
+      li::after{
+        content: '_____';
+        color: red;
+        font-weight: 600;
+      }
+      input::placeholder{
+        color: red;
+      }
+      p::first-letter{
+        font-size: 48px;
+      }
+      p::first-line{
+        color: chocolate;
+      }
+      p::selection {
+        color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box second"></div>
+    <div class="box"></div>
+
+    <nav>
+        <a href="#"> Home</a>
+        <a href="#"> Product</a>
+        <a href="#"> Pricing</a>
+        <a href="#"> Contact</a>
+        <a href="#"> About</a>
+      </nav>
+  
+      <ul>
+        <li>Jaimin</li>
+        <li>Rahul</li>
+        <li>Bhavesh</li>
+        <li>Jay</li>
+      </ul>
+
+      <input type="text" id="" name="" id="" placeholder="Enter your name">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi sapiente facilis hic repellat, assumenda debitis aliquid quae magnam dolor quis consequuntur error repudiandae libero accusamus nostrum sunt veritatis molestiae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repudiandae excepturi, quia ut modi rem impedit, minima adipisci nesciunt vel non ab facilis nihil delectus maiores magnam perferendis atque! Cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum doloribus tenetur ad consequatur possimus, quae non error vel facere quo, dolor, quasi accusamus placeat nostrum earum! Facilis, esse ut!</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border-radius: 24px;
+            background-color: chocolate;
+            margin: auto;
+            margin-top: 100px;
+
+            
+        box-shadow: x-offset y-offset blur spread color inset;
+
+        /* x-offset :
+          move right => positive 
+          move left => negative  */
+        /* y-offset :
+          move bottom => positive 
+          move top => negative  */
+
+          box-shadow: 10px 0 0 0;
+          box-shadow: 10px 10px 0 0;
+          box-shadow: 10px -10px 0 0 ;
+          box-shadow: -10px 10px 10px 10px;
+          box-shadow: -10px -10px 10px 10px red;
+          box-shadow: -10px 10px 10px 2px rgba(0, 0, 0, 0.475),
+          10px 20px 10px 2px rgba(0, 0, 0, 0.604);
+          /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+          box-shadow: 5px 5px 20px 10px black inset;
+          transition: all 300ms;
+        }
+        .box:hover{
+          transform: translateX(10px);
+          box-shadow: 0px 18px 38px black,0 15px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

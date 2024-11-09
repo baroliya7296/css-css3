@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: fit-content;
+            margin: auto;
+            margin-top: 30px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            gap: 20px;
+        }
+        .child{
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: crimson;
+            font-size: 20px;
+            font-weight: 600;
+            align-items: center;
+            justify-items: center;
+            display: flex;
+        }
+        .child:nth-child(3){
+            background-color: greenyellow;
+        }
+        .child:nth-child(5){
+            background-color: darkslateblue;
+        }
+        .child:nth-child(odd){
+            background-color: cyan;
+        }
+        .child:nth-child(even){
+            background-color: fuchsia;
+        }
+        .child:nth-child(n+4){
+            background-color: darkorange;
+        }
+        .child:nth-child(3n){
+            background-color: gray;
+        }
+        .child:nth-last-child(3){
+            background-color: cornflowerblue;
+        }
+        .child:nth-of-type(5){
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+    </div>
+     
+</body>
+</html>

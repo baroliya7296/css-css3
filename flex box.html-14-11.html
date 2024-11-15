@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 500px;
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: cadetblue;
+            margin: 50px auto;
+            
+            display: flex;
+            /* display: inline-flex; */
+
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+
+            /* justify-content is used to item set on the main axis */
+
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+
+            /* justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            /* align-items,when we want to item set the cross-axis */
+            /* align-items: start;
+            align-items: center;
+            align-items: end;
+            align-items: baseline;
+            align-items: stretch; */
+
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row wrap; */
+
+            /* align-content when we want to set the item in the cross-axis */
+            align-content: start;
+            align-content: center;
+            align-content: end;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: space-evenly;
+            align-content: baseline;
+            align-content: stretch;
+            
+            /* gap when we want to items  between gap  */
+
+           column-gap: 10px;
+           row-gap: 20px;
+           /* gap: 10px;
+           gap: 10px 20px; */
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .child:nth-child(1){
+            font-size: 24px;
+        }
+    .child:nth-child(2){
+        font-size: 32px;
+    }
+    .child:nth-child(3){
+        font-size: 50px;
+        background-color: rgb(127, 140, 255);
+    }
+    .child:nth-child(4){
+        font-size: 40px;
+    }
+    .child:nth-child(5){
+        font-size: 36px;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+             <div class="child">1</div>
+             <div class="child">2</div>
+             <div class="child">3</div>
+             <div class="child">4</div>
+             <div class="child">5</div>
+             <div class="child">6</div>
+             <div class="child">7</div>
+             <div class="child">8</div>
+             <div class="child">9</div>
+             <div class="child">10</div>
+             <div class="child">11</div>
+             <div class="child">12</div>
+             <div class="child">13</div>
+             <div class="child">14</div>
+             <div class="child">15</div>
+    </div>
+</body>
+</html>
